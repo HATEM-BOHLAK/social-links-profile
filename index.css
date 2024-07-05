@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --back: #141414;
+    --main: #1f1f1f;
+    --title: #fdfdfd;
+    --subtitle: #bdbdbd;
+    --btntitle: #fefefe;
+    --btnback: #333333;
+    --special: #caee32;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--back);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+}
+
+.container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .header h1 {
+    color: var(--title);
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.container .header .p1 {
+    color: var(--special);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.container .header h2 {
+    color: var(--subtitle);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.container .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+.container .btns a,
+.container .btns button {
+    border: none;
+    background-color: var(--btnback);
+    color: var(--btntitle);
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .btns a:hover,
+.container .btns button:hover {
+    color: black;
+    background-color: var(--special);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
